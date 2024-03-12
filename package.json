@@ -1,0 +1,23 @@
+{
+  "name": "TWG_ParallaxSystem",
+  "version": "0.01a",
+  "description": "This is a Tiny Walnut Game's Tiny Walnut Parallax System! I provide you with four scripts and examples to help you make your parallax backgrounds quickly and easily. Some assembly required.",
+  "main": "index.js",
+  "scripts": {
+    "HorizontalScrollingBackground": "",
+    "HorizontalScrollingBackgroundReversed": "",
+    "VerticalScrollingBackground": "",
+    "VerticalScrollingBackgroundReversed": ""
+  },
+  "keywords": [
+    "parallax",
+    "background",
+    "scrolling",
+    "2D",
+    "game",
+    "Unity",
+    "asset"
+  ],
+  "author": "Jerimiah Meyer <jmeyer1980@gmail.com>",
+  "license": "MIT"
+}

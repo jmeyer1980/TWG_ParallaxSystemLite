@@ -1,7 +1,4 @@
-# TWG_ParallaxSystemLite
- A free version of the TinyWalnutGames Parallax sytem
- 
- How do you use this asset?
+How do you use this asset?
 
 Firstly, please note that it usually easier to match the camera to the size of the background than the other way around. Resizing the content rather than the camera leads to undesirable gaps in between the backgrounds. Having said that... The scripts for horizontal parallax attempt to dynamically assign the number of background images to clone and recycle. Currently, the scripts detect the screen width and the background's width and uses that to create up to three extra background images on either side of the camera so that the recycling is not seen by the camera.
 
