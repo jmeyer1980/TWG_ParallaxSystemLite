@@ -11,7 +11,7 @@ Without further ado...
 
 Add Script to GameObject: First, create an empty game object, call it something like "ParalaxGroup." Then add one script by dragging the script into the inspector for the object. To create layers, add multiple scripts to the same GameObject. Consider each component you assign as its own layer.
 
-Set ScrollSpeed: Adjust the speed at which the background scrolls in the Inspector window.
+Set ScrollSpeed: Adjust the speed at which the background scrolls in the Inspector window. I have been asked if negative numbers work: no. Negative numbers for speed will not work with my method and I have been unsuccessful at getting negative speeds to work and calculte correctly.
 
 Set PoolSize: This part is now mostly automated for the horizontal parallax scripts. For the vertical scripts, you will need to determine the number of background objects that will be instantiated. Adjust this according to the size and complexity of your background. Please note that the scripts will automatically hide all sprites that were assigned before spawning in the clones. This is so the original images and sprites do not detract from the parallax by staying visible.
 
