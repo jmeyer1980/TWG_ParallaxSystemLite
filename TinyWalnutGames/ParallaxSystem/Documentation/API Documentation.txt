@@ -1,0 +1,62 @@
+namespace TinyWalnutGames.Parallax
+{
+    /// <summary>
+    /// This class is responsible for creating a vertical scrolling background effect.
+    /// </summary>
+    public class VerticalScrollingBackground : MonoBehaviour
+    {
+        /// <summary>
+        /// The prefab of the background that will be scrolled.
+        /// </summary>
+        public GameObject BackgroundPrefab;
+
+        /// <summary>
+        /// The speed at which the background scrolls.
+        /// </summary>
+        public float ScrollSpeed = 1f;
+
+        /// <summary>
+        /// The number of background instances to create.
+        /// </summary>
+        public int PoolSize = 5;
+
+        /// <summary>
+        /// The size of the gap between each background instance.
+        /// </summary>
+        public float GapSize = 1f;
+
+        /// <summary>
+        /// The offset to apply to the position of the background instances.
+        /// </summary>
+        public Vector3 Offset = new Vector3(0, 0, 0);
+
+        /// <summary>
+        /// The chance for a background instance to be transparent.
+        /// </summary>
+        public float AlphaChance = 0.5f;
+
+        /// <summary>
+        /// A queue to hold the background instances.
+        /// </summary>
+        private Queue<GameObject> _backgrounds;
+
+        /// <summary>
+        /// The height of the background instances.
+        /// </summary>
+        private float _backgroundHeight;
+
+        /// <summary>
+        /// This method is called when the script instance is being loaded.
+        /// It initializes the queue, gets the height of the background prefab,
+        /// creates the background instances and adds them to the queue.
+        /// </summary>
+        void Start();
+
+        /// <summary>
+        /// This method is called every frame.
+        /// It gets the position to reset the backgrounds to, scrolls the backgrounds,
+        /// and if the background has moved off the screen, repositions it to the reset position.
+        /// </summary>
+        void Update();
+    }	
+}
