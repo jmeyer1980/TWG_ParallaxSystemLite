@@ -1,9 +1,9 @@
 # TWG_ParallaxSystem
- The full version of the TinyWalnutGames Parallax sytem
+ The light version of the TinyWalnutGames Parallax sytem
  
  How do you use this asset?
 
-This version of the TWG_ParallaxSystem uses Texture2D in the code rather than just SpriteRenderer. I have found that this tends to look slightly cleaner than sprite renderer.
+This version of the TWG_ParallaxSystem uses SpriteRenderer and only provides one version of parallax. The full version supports four directions and utilizes Texture2D over sprite renderer.
 
 The scripts for horizontal parallax attempt to dynamically assign the number of background images to clone and recycle. Currently, the scripts detect the screen width and the background's width and uses that to create up to three extra background images on either side of the camera so that the recycling is not seen by the camera. I have noticed that there are sometimes more than three to cushion the recycling of the backgrounds.
 
