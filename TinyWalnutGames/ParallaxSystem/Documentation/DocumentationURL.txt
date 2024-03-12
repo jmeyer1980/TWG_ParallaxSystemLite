@@ -1,0 +1,1 @@
+You can find documentation (a readme file and an API document) at my Git repository: https://github.com/jmeyer1980/TWG_ParallaxSystemLite
